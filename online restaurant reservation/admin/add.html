@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Add Data</title>
+</head>
+
+<body>
+	<a href="index.php">Home</a> | <a href="view.php">View Reservation</a> | <a href="logout.php">Logout</a>
+	<br/><br/>
+
+	<form action="add.php" method="post" >
+		<table width="25%" border="0">
+			<tr> 
+				<td>Date</td>
+				<td><input type="date" id="res_date" name="res_date"></td>
+			</tr>
+			<tr> 
+				<td>Time</td>
+				<td><select id="res_time" name = "res_time">
+                                <option value="Select Time"></option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">11: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">13: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">19: 00</option>
+                                <option value = "10">20: 00</option>
+                            </select></td>
+			</tr>
+			<tr> 
+				<td>Full Name</td>
+				<td><input type = "text" id="fullName" name="fullName"></td>
+			</tr>
+			<tr> 
+				<td>Phone Number</td>
+				<td><input type = "text" id="phone" name="phone"></td>
+			</tr>
+			<tr> 
+				<td>Total of Person</td>
+				<td><input type = "text" id="pax" name="pax"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
